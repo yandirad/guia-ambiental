@@ -40,6 +40,7 @@ a{
     /*fuente*/
     text-decoration: none;
     color: black;
+    font-weight: 500;
     font-size: larger;
     /*fondo*/
     background-color: rgba(255, 235, 205, 0.561);
@@ -47,6 +48,23 @@ a{
     margin: 1em;
     border-radius: 10%;
     
+}
+
+a:hover{
+    /*fuente*/
+    color: rgb(83, 95, 67);
+    /*fondo*/
+    background-color: rgba(255, 235, 205, 0.849);
+    margin: 1em;
+}
+
+a:active{
+    color: black;
+    background-color: rgba(252, 201, 126, 0.849);
+}
+
+a:visited{
+    color: rgb(129, 28, 3);
 }
 
 #seccionNavegacion{
