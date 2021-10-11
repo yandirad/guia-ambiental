@@ -13,31 +13,25 @@ header{
 section{
     width: 100%;
     max-width: 80rem;
-    margin: 5px auto;
+    margin: 10px auto;
     border-radius: 1em;
     padding: 1em;
     background-color: rgb(202, 224, 191);
 }
 
 section h1{
-    text-align: center;
+    display: inline-block;
+    width: auto;
+    font-size: 3rem;
+    background-color: rgba(255, 235, 205, 0.561);
+    border-radius: 5%;
+    padding: 10px;
 }
 
 
 i{
    float: left;
   
-}
-
-#icono{
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
-}
-
-#navegacion{
-    float:right;
-    display: inline-block;
 }
 
 a{
@@ -53,6 +47,24 @@ a{
     margin: 1em;
     border-radius: 10%;
     
+}
+
+#seccionNavegacion{
+    background-color: rgb(94, 121, 81);
+}
+
+#titulo{
+    text-align: center;
+}
+
+#icono{
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#navegacion{
+    float:right;
 }
 
 .grilla{
