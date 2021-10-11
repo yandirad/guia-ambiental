@@ -36,35 +36,43 @@ i{
 
 a{
     /*ubicacion*/
-    display: inline-block;
+    display: inline-block !important;
     /*fuente*/
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    font-size: larger;
+    text-decoration: none !important;
+    color: black !important;
+    font-weight: 500 !important;
+    font-size: larger !important;
     /*fondo*/
-    background-color: rgba(255, 235, 205, 0.561);
-    padding: 1em;
-    margin: 1em;
-    border-radius: 10%;
+    background-color: rgba(255, 235, 205, 0.561) !important;
+    padding: 1em !important;
+    margin: 1em !important;
+    border-radius: 10% !important;
     
 }
 
-a:hover{
+a:hover{ 
     /*fuente*/
-    color: rgb(83, 95, 67);
+    color: rgb(83, 95, 67) !important;
     /*fondo*/
-    background-color: rgba(255, 235, 205, 0.849);
-    margin: 1em;
+    background-color: rgba(255, 235, 205, 0.849) !important;
+    margin: 1em !important;
 }
 
 a:active{
-    color: black;
-    background-color: rgba(252, 201, 126, 0.849);
+    color: black !important;
+    background-color: rgba(252, 201, 126, 0.849) !important; 
 }
 
 a:visited{
-    color: rgb(129, 28, 3);
+    color: rgb(129, 28, 3) !important;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
 }
 
 #seccionNavegacion{
