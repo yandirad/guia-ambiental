@@ -1,0 +1,85 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+}
+
+section{
+    width: 100%;
+    max-width: 80rem;
+    margin: 5px auto;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: rgb(202, 224, 191);
+}
+
+section h1{
+    text-align: center;
+}
+
+
+i{
+   float: left;
+  
+}
+
+#icono{
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#navegacion{
+    float:right;
+    display: inline-block;
+}
+
+a{
+    /*ubicacion*/
+    display: inline-block;
+    /*fuente*/
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    /*fondo*/
+    background-color: rgba(255, 235, 205, 0.561);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10%;
+    
+}
+
+.grilla{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.docecolumnas{
+    grid-column-end: span 12;
+}
+
+.tarjeta{
+    grid-column-end: span 4;
+    border-radius: 50%;
+    max-width: 50rem;
+}
+
+.centrado{
+    text-align: center;
+
+}
+
+img{
+    border-radius: 1em;
+}
+
+.mapamapa{
+    grid-column-start: 3;
+}
