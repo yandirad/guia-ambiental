@@ -30,8 +30,7 @@ section h1{
 
 
 i{
-   float: left;
-  
+   float: left;  
 }
 
 a{
@@ -75,6 +74,10 @@ p{
     text-align: justify;
 }
 
+img{
+    border-radius: 1em;
+}
+
 #seccionNavegacion{
     background-color: rgb(94, 121, 81);
 }
@@ -91,6 +94,10 @@ p{
 
 #navegacion{
     float:right;
+}
+
+#iFooter{
+    padding: 0 5px ;
 }
 
 .grilla{
@@ -112,10 +119,6 @@ p{
 .centrado{
     text-align: center;
 
-}
-
-img{
-    border-radius: 1em;
 }
 
 .mapamapa{
