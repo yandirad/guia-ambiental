@@ -70,10 +70,6 @@ h3{
     text-align: center;
 }
 
-p{
-    text-align: justify;
-}
-
 img{
     border-radius: 1em;
 }
@@ -119,6 +115,10 @@ img{
 .centrado{
     text-align: center;
 
+}
+
+.justificado{
+    text-align: justify;
 }
 
 .mapamapa{
