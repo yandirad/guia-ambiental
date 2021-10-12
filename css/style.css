@@ -12,7 +12,7 @@ header{
 
 section{
     width: 100%;
-    max-width: 80rem;
+    max-width: 70%;
     margin: 10px auto;
     border-radius: 1em;
     padding: 1em;
@@ -25,7 +25,8 @@ section h1{
     font-size: 3rem;
     background-color: rgba(255, 235, 205, 0.561);
     border-radius: 5%;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
 }
 
 
@@ -43,18 +44,15 @@ a{
     font-size: larger !important;
     /*fondo*/
     background-color: rgba(255, 235, 205, 0.561) !important;
-    padding: 1em !important;
-    margin: 1em !important;
+    padding: 10px !important;
+    margin: 20px !important;
     border-radius: 10% !important;
     
 }
 
 a:hover{ 
-    /*fuente*/
     color: rgb(83, 95, 67) !important;
-    /*fondo*/
     background-color: rgba(255, 235, 205, 0.849) !important;
-    margin: 1em !important;
 }
 
 a:active{
@@ -82,14 +80,15 @@ img{
     text-align: center;
 }
 
-#icono{
-    margin: 10px;
+#iNav{
+    margin: 10px 50px;
     padding: 10px;
     display: inline-block;
 }
 
 #navegacion{
     float:right;
+    margin: 20px 10px 0px 10px;
 }
 
 #iFooter{
@@ -121,6 +120,6 @@ img{
     text-align: justify;
 }
 
-.mapamapa{
+.mapa{
     grid-column-start: 3;
 }
