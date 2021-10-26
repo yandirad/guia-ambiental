@@ -1,6 +1,7 @@
 body{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/background/trees_sky_background.jpg);
 }
 
 header{
@@ -16,7 +17,7 @@ section{
     margin: 10px auto;
     border-radius: 1em;
     padding: 1em;
-    background-color: rgb(202, 224, 191);
+    background-color: rgba(202, 224, 191, 0.9);
 }
 
 section h1{
@@ -73,7 +74,7 @@ img{
 }
 
 #seccionNavegacion{
-    background-color: rgb(94, 121, 81);
+    background-color: rgba(94, 121, 81, 0.94);
 }
 
 #titulo{
