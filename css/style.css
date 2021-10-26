@@ -73,6 +73,12 @@ img{
     border-radius: 1em;
 }
 
+section div p{
+    box-sizing: border-box;
+    text-align:justify;
+    margin: 40px;
+}
+
 #seccionNavegacion{
     background-color: rgba(94, 121, 81, 0.94);
 }
