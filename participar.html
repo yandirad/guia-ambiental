@@ -57,21 +57,21 @@
       o tenés información que nos puede ser útil, no dudes en completar este formulario. ¡Muy pronto nos pondremos en
       contacto!
     </p>
-    <form class="needs-validation" novalidate>
+    <form id="formulario" class="needs-validation" novalidate>
       <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="inputPassword4">Nombre</label>
-          <input type="text" class="form-control" placeholder="Nombre">
+          <label for="inputName4">Nombre</label>
+          <input type="text" class="form-control" name="name" placeholder="Nombre">
         </div>
         <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email">
         </div>
 
       </div>
       <div class="form-group">
         <label for="inputAddress">Dirección</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Ej: Córdoba 1234">
+        <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Ej: Córdoba 1234">
       </div>
       <div class="form-group">
         <label for="inputAddress2">Piso/dto/timbre</label>
@@ -80,12 +80,12 @@
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="inputCity">Ciudad</label>
-          <input type="text" class="form-control" id="inputCity">
+          <input type="text" class="form-control" name="city" id="inputCity">
         </div>
         <div class="form-group col-md-4">
           <label for="inputState">Área</label>
-          <select id="inputState" class="form-control">
-            <option selected>Elegir opción</option>
+          <select id="inputState" class="form-control" name="area">
+            <option selected></option>
             <option>Individuo</option>
             <option>ONG</option>
             <option>Empresa</option>
@@ -95,8 +95,8 @@
         </div>
         <div class="form-group col-md-4">
           <label for="inputState">Rubro</label>
-          <select id="inputState" class="form-control">
-            <option selected>Elegir opción</option>
+          <select id="inputState" class="form-control" name="rubro">
+            <option selected></option>
             <option>Comida</option>
             <option>Limpieza</option>
             <option>Movilidad</option>
@@ -132,10 +132,15 @@
       </div>
     </section>
   </footer>
+
+  <!-- Script de validacion -->
+  <script src="./js/script.js"></script>
+
   <!--Font Awsome-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
     integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!--Boostrap-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
