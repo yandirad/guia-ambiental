@@ -118,6 +118,12 @@ section div p{
     padding: 0 5px ;
 }
 
+.msj{
+    padding: 0.1rem;
+    margin: 0.1rem;
+    color: red;
+}
+
 .grilla{
     display: grid;
     gap: 5px;

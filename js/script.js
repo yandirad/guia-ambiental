@@ -6,7 +6,9 @@
 
     let validarNombre = function (e){
         if(formulario.name.value == ''){
-            alert("Complete el campo nombre.");
+            let msj = document.getElementById("msjName");
+            msj.innerHTML = "Complete el campo nombre.";
+            //alert("Complete el campo nombre.");
             e.preventDefault();
         }
     };
@@ -15,37 +17,42 @@
         var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if(formulario.email.value.match(mailFormat)){
         } else{
-
-            alert("Email invalido.");
+            let msj = document.getElementById("msjEmail");
+            msj.innerHTML = "El email ingresado es incorrecto.";
             e.preventDefault();
         }
     };
 
     let validarDireccion = function (e){
         if(formulario.address.value == ''){
-            alert("Complete el campo direccion.");
+            let msj = document.getElementById("msjAddress");
+            msj.innerHTML = "Complete el campo dirección.";
             e.preventDefault();
         }
     };
     let validarCiudad = function (e){
         if(formulario.city.value == ''){
-            alert("Complete el campo ciudad.");
+            let msj = document.getElementById("msjCity");
+            msj.innerHTML = "Complete el campo ciudad.";
             e.preventDefault();
         }
     };
     let validarArea = function (e){
         if(formulario.area.value == ''){
-            alert("Seleccione un área.");
+            let msj = document.getElementById("msjArea");
+            msj.innerHTML = "Seleccione un área.";
             e.preventDefault();
         }
     };
 
     let validarRubro = function (e){
         if(formulario.rubro.value == ''){
-            alert("Seleccione un rubro.");
+            let msj = document.getElementById("msjRubro");
+            msj.innerHTML = "Seleccione un rubro.";
             e.preventDefault();
         }
     };
+    
 
     let validar = function(e){
         validarNombre(e);
