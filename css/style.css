@@ -58,11 +58,6 @@ i{
    float: left;  
 }
 
-img{
-    height: 300px;
-    width: 300px;
-    border-radius: 1em;
-}
 
 section{
     width: 100%;
@@ -100,6 +95,14 @@ section h1{
     0%{left: 0px; transform: rotate(20deg);}
     50%{left: 200px; transform: rotate(300deg); color: rgb(138, 190, 140);}
     100%{left: 0px; transform: rotate(0deg);}
+}
+
+#div1{
+    grid-column-end: span 4;
+}
+
+#div2{
+    grid-column-end: span 8;
 }
 
 #iNav{
@@ -143,6 +146,13 @@ section h1{
     padding: 10px !important;
 }
 
+.fotoNosotros{
+    max-width: 300px;
+    border-radius: 2em;
+    margin: 3rem;
+    padding: 1rem;
+}
+
 .grilla{
     display: grid;
     gap: 5px;
@@ -161,6 +171,12 @@ section h1{
     padding: 0.1rem;
     margin: 0.1rem;
     color: red;
+}
+
+.tamanioFoto{
+    height: 300px;
+    width: 300px;
+    border-radius: 1em;
 }
 
 .tarjeta{
