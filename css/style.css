@@ -1,6 +1,6 @@
 body{
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     background-image: url(../img/background/trees_sky_background.jpg);
 }
 
@@ -26,9 +26,8 @@ section h1{
     width: auto;
     font-size: 3rem;
     margin: 10px;
-    padding: 5px;
+    
 }
-
 
 i{
    float: left;  
@@ -45,7 +44,7 @@ a{
     /*fondo*/
     background-color: rgba(255, 235, 205, 0.561) !important;
     padding: 10px !important;
-    margin: 20px !important;
+    margin: 10px !important;
     border-radius: 10% !important;
     
 }
@@ -97,6 +96,7 @@ section div p{
 #seccionNavegacion{
     background-color: rgba(94, 121, 81, 0.94);
     scroll-behavior: smooth;
+    height: 180px !important;
 }
 
 #titulo{
@@ -104,7 +104,7 @@ section div p{
 }
 
 #iNav{
-    margin: 10px 50px;
+    margin: 0px 30px;
     padding: 10px;
     display: inline-block;
 }
@@ -132,6 +132,11 @@ section div p{
 
 .docecolumnas{
     grid-column-end: span 12;
+}
+
+.form{
+    margin: 10px !important;
+    padding: 10px !important;
 }
 
 .tarjeta{
