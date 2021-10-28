@@ -1,37 +1,10 @@
-body{
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif !important;
-    background-image: url(../img/background/trees_sky_background.jpg);
-}
+/* los estilos se encuentra divididos en 3 secciones: primero por etiquetas, luego por id 
+y por ultimo las clases.
+Dentro de cada seccion, se ordenan alfabeticamente.
+*/
 
-header{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    
-    top: 0;
-    z-index: 1; 
-}
 
-section{
-    width: 100%;
-    max-width: 70%;
-    margin: 10px auto;
-    border-radius: 1em;
-    padding: 1em;
-    background-color: rgba(202, 224, 191, 0.9);
-}
-
-section h1{
-    display: inline-block;
-    width: auto;
-    font-size: 3rem;
-    margin: 10px;
-    
-}
-
-i{
-   float: left;  
-}
+/*============================           ETIQUETAS              ======================== */
 
 a{
     /*ubicacion*/
@@ -63,8 +36,26 @@ a:visited{
     color: rgb(129, 28, 3) !important;
 }
 
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+    background-image: url(../img/background/trees_sky_background.jpg);
+}
+
 h3{
     text-align: center;
+}
+
+header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    
+    top: 0;
+    z-index: 1; 
+}
+
+i{
+   float: left;  
 }
 
 img{
@@ -73,11 +64,30 @@ img{
     border-radius: 1em;
 }
 
+section{
+    width: 100%;
+    max-width: 70%;
+    margin: 10px auto;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: rgba(202, 224, 191, 0.9);
+}
+
 section div p{
     box-sizing: border-box;
     text-align:justify;
     margin: 40px;
 }
+
+section h1{
+    display: inline-block;
+    width: auto;
+    font-size: 3rem;
+    margin: 10px;
+    
+}
+
+/*==========================           IDS              ======================== */
 
 #animation{
     display: inline-block;
@@ -86,11 +96,25 @@ section div p{
     position: relative;
     animation-timing-function: ease-in;
 }
-
 @keyframes giro {
     0%{left: 0px; transform: rotate(20deg);}
     50%{left: 200px; transform: rotate(300deg); color: rgb(138, 190, 140);}
     100%{left: 0px; transform: rotate(0deg);}
+}
+
+#iNav{
+    margin: 0px 30px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#iFooter{
+    padding: 0 5px ;
+}
+
+#navegacion{
+    float:right;
+    margin: 20px 10px 0px 10px;
 }
 
 #seccionNavegacion{
@@ -103,31 +127,11 @@ section div p{
     text-align: center;
 }
 
-#iNav{
-    margin: 0px 30px;
-    padding: 10px;
-    display: inline-block;
-}
+/*==========================           CLASES              ======================== */
 
-#navegacion{
-    float:right;
-    margin: 20px 10px 0px 10px;
-}
+.centrado{
+    text-align: center;
 
-#iFooter{
-    padding: 0 5px ;
-}
-
-.msj{
-    padding: 0.1rem;
-    margin: 0.1rem;
-    color: red;
-}
-
-.grilla{
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(12, 1fr);
 }
 
 .docecolumnas{
@@ -139,15 +143,10 @@ section div p{
     padding: 10px !important;
 }
 
-.tarjeta{
-    grid-column-end: span 4;
-    border-radius: 50%;
-    max-width: 50rem;
-}
-
-.centrado{
-    text-align: center;
-
+.grilla{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .justificado{
@@ -156,4 +155,16 @@ section div p{
 
 .mapa{
     grid-column-start: 3;
+}
+
+.msj{
+    padding: 0.1rem;
+    margin: 0.1rem;
+    color: red;
+}
+
+.tarjeta{
+    grid-column-end: span 4;
+    border-radius: 50%;
+    max-width: 50rem;
 }
