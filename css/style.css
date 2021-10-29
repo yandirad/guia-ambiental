@@ -25,6 +25,7 @@ a{
 a:hover{ 
     color: rgb(83, 95, 67) !important;
     background-color: rgba(255, 235, 205, 0.849) !important;
+    transition: 0.5s;
 }
 
 a:active{
@@ -78,8 +79,14 @@ section h1{
     display: inline-block;
     width: auto;
     font-size: 3rem;
-    margin: 10px;
-    
+    margin: 10px;  
+    font-weight: 300;
+}
+
+ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
 }
 
 /*==========================           IDS              ======================== */
@@ -134,11 +141,30 @@ section h1{
 
 .centrado{
     text-align: center;
-
 }
 
 .docecolumnas{
     grid-column-end: span 12;
+}
+
+.embed-container {
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    position: relative !important;    
+    overflow: hidden !important;
+}
+.embed-container iframe {
+    display: block;
+    height: 50vh;
+    top:0 !important;
+    left: 0 !important; 
+    width: 100% !important;
+    max-width: 1200px;
+    margin: 5vw;
+    
 }
 
 .form{
@@ -146,11 +172,16 @@ section h1{
     padding: 10px !important;
 }
 
-.fotoNosotros{
-    max-width: 300px;
+.fotoNosotros1{
+    width: 20vw;
     border-radius: 2em;
-    margin: 3rem;
-    padding: 1rem;
+    margin: 8vw 1vw 0vw 1vw;
+
+}
+.fotoNosotros2{
+    width: 20vw;
+    border-radius: 2em;
+    margin: 6vw 1vw 8vw 1vw;
 }
 
 .grilla{
@@ -174,8 +205,8 @@ section h1{
 }
 
 .tamanioFoto{
-    height: 300px;
-    width: 300px;
+    height: 20vw;
+    width: 20vw;
     border-radius: 1em;
 }
 
@@ -183,4 +214,138 @@ section h1{
     grid-column-end: span 4;
     border-radius: 50%;
     max-width: 50rem;
+}
+
+/* ===========================           telefonos moviles             =============== */
+@media screen and (max-width: 768px){
+ 
+    a{
+        /*ubicacion*/
+        display: inline-block !important;
+        /*fuente*/
+        text-decoration: none !important;
+        color: black !important;
+        font-weight: 500 !important;
+        font-size: larger !important;
+        /*fondo*/
+        background-color: rgba(255, 235, 205, 0.561) !important;
+        padding: 5px !important;
+        margin: 5px !important;
+        border-radius: 10% !important;
+        
+    }
+    header{
+        position: inherit;
+    }
+    nav ul{
+        height: 300px;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    #seccionNavegacion{
+        height: 50vh !important;
+        padding-top: 0vh;
+    }
+
+    #animation{
+        animation-duration: 0s;
+    }
+    @keyframes giro {
+        0%{left: 0px; transform: rotate(20deg);}
+        50%{left: 50px; transform: rotate(300deg); color: rgb(138, 190, 140);}
+        100%{left: 0px; transform: rotate(0deg);}
+    }
+
+    #div1{
+        grid-column-end: span 12;
+    }
+
+    #div2{
+        grid-column-end: span 12;
+    }
+
+    #iNav{
+        margin: 0px;
+        
+    }
+  
+    #navegacion{
+        margin: 0px !important;
+        height: 20vw;
+    }
+
+    section h1{
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    .fotoNosotros1{
+        width: 50vw;
+        border-radius: 2em;
+        margin: 2vw 5vw;
+
+    }
+    .fotoNosotros2{
+        width: 50vw;
+        border-radius: 2em;
+        margin: 2vw 5vw;
+    }
+   
+    .tamanioFoto{
+        height: 50vw;
+        width: 50vw;
+    }
+ 
+    .tarjeta{
+        grid-column-end: span 12;
+        border-radius: 50%;
+    }
+
+}
+/* ===========================           tablets             =============== */
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+
+    #seccionNavegacion{
+        height: 250px !important;
+    }
+    #iNav{
+        margin: 0px;
+    }
+
+    #navegacion{
+        margin: 0px !important;
+    }
+    
+    @keyframes giro {
+        0%{left: 0px; transform: rotate(20deg);}
+        50%{left: 30px; transform: rotate(300deg); color: rgb(138, 190, 140);}
+        100%{left: 0px; transform: rotate(0deg);}
+    }
+    #div1{
+        grid-column-end: span 12;
+    }
+
+    #div2{
+        grid-column-end: span 12;
+    }
+
+    .fotoNosotros1{
+        width: 20vw;
+        border-radius: 2em;
+        margin: 2vw 5vw;
+
+    }
+    .fotoNosotros2{
+        width: 20vw;
+        border-radius: 2em;
+        margin: 2vw 5vw;
+    }
+    section h1{
+        font-size: 3.5rem;
+        font-weight: 100;
+    }
 }

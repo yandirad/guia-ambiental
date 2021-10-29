@@ -31,50 +31,34 @@
             </div>
 
             <nav>
-                <div id="iNav" >
-                     <div id="animation">
-                         <i class="fas fa-seedling fa-4x"></i>
-                     </div>
+                <div id="iNav">
+                    <div id="animation">
+                        <i class="fas fa-seedling fa-4x"></i>
+                    </div>
                 </div>
-               
+
                 <div id="navegacion">
-                    <a href="./index.html">Home</a>
-                    <a href="./nosotrxs.html">Nosotros</a>
-                    <a href="./participar.html">Participar</a>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./nosotrxs.html">Nosotros</a></li>
+                        <li><a href="./participar.html">Participar</a></li>
+                    </ul>
                 </div>
 
             </nav>
         </section>
     </header>
-    
+
     <!-- Mapa (iframe) -->
     <section class="grilla centrado">
         <h2 class="docecolumnas ">¡Encontrá lo que buscas!</h2>
-        <div class="mapouter">
-            <div class="gmap_canvas">
-                <iframe width="900" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=rosario,
-                        %20santa%20fe&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
-                    marginwidth="0">
-                </iframe>
-        
-                <style>
-                    .mapouter {
-                        position: relative;
-                        margin-left: 100px;
-                        height: 500px;
-                        width: 900px;
-                    }
-                </style>
-                <a href="https://www.embedgooglemap.net">google map html code</a>
-                <style>
-                    .gmap_canvas {
-                        overflow: hidden;
-                        background: none !important;
-                        height: 500px;
-                        width: 900px;
-                    }
-                </style>
-            </div>
+    </section>
+    <section>
+        <div class="gmap_canvas embed-container">
+            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=rosario,
+                        %20santa%20fe&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0">
+            </iframe>
         </div>
     </section>
 
@@ -83,14 +67,15 @@
         <div class="tarjeta ">
             <img class="tamanioFoto" src="../prueba_ambiente/img/cards/typewriter_plants.jpg" alt="typewriter_plants">
             <h3>Información Ambiental</h3>
-            <p>En esta sección podés encontrar información sobre proyectos, organizaciones, eventos, normativas vigentes, telefonos 
+            <p>En esta sección podés encontrar información sobre proyectos, organizaciones, eventos, normativas
+                vigentes, telefonos
                 útiles, y más.
             </p>
         </div>
         <div class="tarjeta">
             <img class="tamanioFoto" src="../prueba_ambiente/img/cards/farmer.jpg" alt="farmer">
             <h3>Comercio Justo</h3>
-            <p>Conseguí tus productos directo del productor, o a través del comercio justo, sin grandes 
+            <p>Conseguí tus productos directo del productor, o a través del comercio justo, sin grandes
                 intermediarios. <br> También encontrarás pequeños emprendimientos.</p>
         </div>
         <div class="tarjeta">
@@ -113,7 +98,7 @@
             </div>
         </section>
     </footer>
-    
+
     <!--Font Awsome-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
         integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
